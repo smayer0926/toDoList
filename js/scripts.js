@@ -18,18 +18,18 @@ $(document).ready(function() {
     var notes = $('#note').val();
     var newInfo  = new info(task,dates,notes);
 
-    $('#outputs').append('<li><input type="checkbox" name="addList" value="addList">' + " " + newInfo.taskList() + '<p><span class= "notes">See notes</span></p><p><span id="noteContent"></span></p></li>');
+    $('#outputs').append(' <li><input type="checkbox" name="addList" value="addList"> ' + " " + newInfo.taskList() + '<h5><span class= "notes">See notes</span></h5><p><span id="noteContent">' + newInfo.notes + '</span></p></li>');
 
 
 
     $('.notes').last().click(function() {
-      $('.notes').append(newInfo.notes);
+      $('#noteContent').toggle();
     });
 
     $('.form-control').val('');
   });
 
-  $('#remove').click(function(event) {
+  $('#didIt').click(function(event) {
     event.preventDefault();
     $('input:checkbox[name=addList]:checked').parent().remove();
   });

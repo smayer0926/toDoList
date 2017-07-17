@@ -33,6 +33,10 @@ body {
   display: none;
 }*/
 
+#noteContent {
+  display: none;
+}
+
 li {
   list-style: none;
 }

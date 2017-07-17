@@ -2,35 +2,37 @@ html {
   position: relative;
   min-height: 100%;
 }
-
-
 body {
   background: url('notebook.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  font-family: fantasy;
 }
-
-.output {
+.notes {
   cursor: pointer;
-  color: #0088cc;
+  color: white;
 }
-
-.output:hover {
+.notes:hover {
   text-decoration: underline;
 }
-
-
+.btn {
+  font-size: 15px;
+}
 .jumbotron {
   margin-top: 3%;
   text-align: center;
   background: inherit;
 }
-
 .form-group {
   font-size: 20px;
+  margin: 20px;
+  padding: 20px;
 }
+/*#output1 {
+  display: none;
+}*/
 
-#outputs {
-  margin: 30px;
+li {
+  list-style: none;
 }

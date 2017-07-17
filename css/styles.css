@@ -1,0 +1,36 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+  background: url('notebook.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.output {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.output:hover {
+  text-decoration: underline;
+}
+
+
+.jumbotron {
+  margin-top: 3%;
+  text-align: center;
+  background: inherit;
+}
+
+.form-group {
+  font-size: 20px;
+}
+
+#outputs {
+  margin: 30px;
+}

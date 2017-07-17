@@ -23,13 +23,13 @@ $(document).ready(function() {
 
 
     $('.notes').last().click(function() {
-      $('#noteContent').toggle();
+      $('#noteContent').last().toggle();
     });
 
     $('.form-control').val('');
   });
 
-  $('#didIt').click(function(event) {
+  $('#remove').click(function(event) {
     event.preventDefault();
     $('input:checkbox[name=addList]:checked').parent().remove();
   });
